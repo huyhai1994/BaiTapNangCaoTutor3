@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="aValue" placeholder="0"> Nhập số a
+<br><br>
+<input type="text" id="bValue" placeholder="0"> Nhập số b
+<hr>
+<button type="button" id="sum" onclick="sumTwoValue()">Nhấn đê !!</button>
+<table>
+    <tr style="color:#070703">
+        <td style="font-weight: bold">Ấn để lấy Kết quả tổng</td>
+        <td id="Result"></td>
+    </tr>
+</table>
+<script>
+    function sumTwoValue() {
+        let a = document.getElementById("aValue").value;
+        let b = document.getElementById("bValue").value;
+        let sum = Number(a) + Number(b);
+        document.getElementById("Result").innerHTML = String(sum);
+    }
+</script>
+</body>
+</html>
